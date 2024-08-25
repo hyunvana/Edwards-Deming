@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Acceso Protegido</title>
+</head>
+<body>
+    <h2>Ingresa la Contraseña</h2>
+    <form id="passwordForm">
+        <input type="password" id="password" placeholder="Contraseña">
+        <button type="submit">Entrar</button>
+    </form>
+    <script>
+        document.getElementById("passwordForm").onsubmit = function(event) {
+            event.preventDefault();
+            var password = document.getElementById("password").value;
+            if(password === "379") {
+                window.location.href = "https://sites.google.com/ucaribe.edu.mx/edwardsdeming/inicio";
+            } else {
+                alert("Contraseña incorrecta.");
+            }
+        }
+    </script>
+</body>
+</html>
+
+
+ 
